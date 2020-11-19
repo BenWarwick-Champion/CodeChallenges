@@ -10,12 +10,10 @@ def simple_primes(num):
     if (prime):
         print(num)
 
-
 # Pythonic version
 def pythonic_primes1(num):
     if all(num % i != 0 for i in range(2, num)):
         print(num)
-
 
 # only checking 2 to sqrt(num)
 def pythonic_primes2(num):
@@ -31,10 +29,7 @@ def sieve_primes(num):
             for i in range(prime, num + 1, prime):
                 sieve[i] = False
 
-
 if __name__ == "__main__":
     input_number = input('Enter the range: ')
 
     sieve_primes(int(input_number))
-
-#
