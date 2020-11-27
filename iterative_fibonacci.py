@@ -10,3 +10,9 @@ def iterative_fibonacci():
 if __name__ == "__main__":
     for index, n in zip(range(100), iterative_fibonacci()):
         print(index, n)
+
+    # Method to just print the nth value from the generator
+    for index, n in enumerate(iterative_fibonacci()):
+        if index == 10:
+            print(n)
+            
